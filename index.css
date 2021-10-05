@@ -184,7 +184,6 @@ hr {
   background-position: 0 -35px;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
-  z-index: 1;
 }
 
 .tag1::before {
@@ -196,8 +195,11 @@ hr {
 }
 
 .tag1:focus::before, .tag2:focus::before {
-  z-index: 2;
   opacity: 1;
+}
+
+.tag1:focus, .tag2:focus {
+  z-index: 2;
 }
 
 .tag2 {
